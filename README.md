@@ -10,8 +10,8 @@ Converter module converts these parameters to PyTorch ones.
 ```
 from convert import Converter
 
-Converter.convert_feature_params('../illust2vec_ver200.caffemodel')
-Converter.convert_tag_params('../illust2vec_tag_ver200.caffemodel')
+Converter.convert_feature_params('illust2vec_ver200.caffemodel')
+Converter.convert_tag_params('illust2vec_tag_ver200.caffemodel')
 ```
 
 ## How to extract feature and tags
