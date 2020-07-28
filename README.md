@@ -24,7 +24,8 @@ tag = Extractor.tag_extract('tag_parameter.pth', ['images/test.png'])
 ```
 
 ## Example
-![simakaze](https://user-images.githubusercontent.com/46510874/88661372-5f334200-d113-11ea-9a84-3b21cdc6a4b5.png)
+<img src="https://user-images.githubusercontent.com/46510874/88661372-5f334200-d113-11ea-9a84-3b21cdc6a4b5.png" alt="sample image" width=250/>
+
 ```
 {'general': [
 ('gloves', 0.9831963777542114), 
