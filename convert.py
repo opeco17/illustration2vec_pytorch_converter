@@ -8,6 +8,7 @@ import model
 
 class Converter(object):
 
+    @classmethod
     def convert_feature_params(self, caffe_parameter_path):
         caffe_model = CaffeFunction(caffe_parameter_path)
         pytorch_model = model.FeatureI2V()
@@ -38,7 +39,8 @@ class Converter(object):
         print('Converted!!')
 
 
-    def convert_tag_params(self):
+    @classmethod
+    def convert_tag_params(self, caffe_parameter_path):
         caffe_model = CaffeFunction(caffe_parameter_path)
         pytorch_model = model.TagI2V()
 

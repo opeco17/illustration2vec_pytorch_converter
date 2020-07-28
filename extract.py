@@ -8,6 +8,7 @@ from model import TagI2V, FeatureI2V
 
 class Extractor(object):
 
+    @classmethod
     def feature_extract(self, pytorch_parameter_path, img_paths):
         i2v = FeatureI2V()
         i2v.load_state_dict(torch.load(pytorch_parameter_path))
@@ -19,7 +20,7 @@ class Extractor(object):
         result = [features[i].reshape(-1) for i in range(features.shape[0])]
         return result
     
-
+    @classmethod
     def tag_extract(self, pytorch_parameter_path, tag_path, img_paths, n_tag=10):
         i2v = TagI2V()
         i2v.load_state_dict(torch.load(pytorch_parameter_path))
@@ -61,7 +62,7 @@ class Extractor(object):
         
         return result
 
-
+    @classmethod
     def _img_to_tensor(self, img):
         img = img.convert('RGB')
         mean = np.array([164.76139251,  167.47864617,  181.13838569])
