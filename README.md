@@ -3,9 +3,9 @@ This is the pytorch implementation of [illustration2vec](https://github.com/rezo
 
 To use parameters of model, you should download caffe parameters from [here](https://github.com/rezoo/illustration2vec/releases).
 
-Converter module converts these parameters to PyTorch version.
+Converter module converts these parameters to PyTorch ones.
 
-## How to convert caffe model to pytorch model
+## How to convert caffe parameters to pytorch ones
 
 ```
 from convert import Converter
@@ -22,3 +22,5 @@ from extract import Extractor
 feature = Extractor.feature_extract('feature_parameter.pth', 'tag_list.json', ['images/test.png'])
 tag = Extractor.tag_extract('tag_parameter.pth', ['images/test.png'])
 ```
+
+# Example
