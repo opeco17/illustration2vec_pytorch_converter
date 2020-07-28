@@ -23,4 +23,4 @@ feature = Extractor.feature_extract('feature_parameter.pth', 'tag_list.json', ['
 tag = Extractor.tag_extract('tag_parameter.pth', ['images/test.png'])
 ```
 
-# Example
+## Example
