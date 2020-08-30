@@ -1,7 +1,7 @@
 # illustration2vec_PyTorch
 This is the pytorch implementation of [illustration2vec](https://github.com/rezoo/illustration2vec).
 
-To use parameters of model, you should download caffe parameters from [here](https://github.com/rezoo/illustration2vec/releases).
+To use parameters of pretrained model, you should download caffe parameters from [here](https://github.com/rezoo/illustration2vec/releases).
 
 Converter module converts these parameters to PyTorch ones.
 
